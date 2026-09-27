@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#111214" />
+    <meta name="description" content="Privacy policy for the Minesweeper Challenge iOS game." />
+    <title>Minesweeper Challenge Privacy Policy</title>
+    <style>
+      :root {
+        --bg: #111214;
+        --panel: #222326;
+        --line: #2E3034;
+        --text: #F5F5F3;
+        --muted: #ABADB3;
+        --gold: #FFC83D;
+        color-scheme: dark;
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 40px 20px 56px;
+      }
+      a { color: var(--gold); text-underline-offset: 2px; }
+      .brand {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--gold);
+        text-decoration: none;
+        margin-bottom: 12px;
+      }
+      h1 {
+        font-size: clamp(28px, 7vw, 38px);
+        line-height: 1.15;
+        margin: 0 0 12px;
+        letter-spacing: -0.01em;
+      }
+      .lede { color: var(--muted); margin: 0 0 8px; }
+      .meta { color: var(--muted); font-size: 14px; margin: 0; }
+      section {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 20px 20px 18px;
+        margin-top: 16px;
+      }
+      h2 {
+        font-size: 19px;
+        line-height: 1.3;
+        margin: 0 0 10px;
+      }
+      h3 {
+        font-size: 16px;
+        margin: 16px 0 4px;
+      }
+      p, li { color: var(--muted); }
+      p { margin: 0 0 10px; }
+      p:last-child, ul:last-child { margin-bottom: 0; }
+      ul { margin: 0 0 10px; padding-left: 20px; }
+      li { margin: 4px 0; }
+      strong { color: var(--text); font-weight: 600; }
+      .toc { margin-top: 28px; }
+      .toc ul { list-style: none; padding: 0; columns: 2; column-gap: 20px; }
+      .toc li { break-inside: avoid; }
+      details {
+        border-top: 1px solid var(--line);
+        padding: 12px 0;
+      }
+      details:first-of-type { border-top: 0; padding-top: 4px; }
+      details:last-of-type { padding-bottom: 0; }
+      summary {
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--text);
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      summary::-webkit-details-marker { display: none; }
+      summary::after { content: "+"; color: var(--gold); font-weight: 700; }
+      details[open] summary::after { content: "\2212"; }
+      details > div { padding-top: 8px; }
+      .divisions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin: 4px 0 10px;
+        padding: 0;
+        list-style: none;
+      }
+      .divisions li {
+        margin: 0;
+        padding: 3px 10px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        font-size: 14px;
+        color: var(--text);
+        background: var(--bg);
+      }
+      .contact {
+        border-color: rgba(255, 200, 61, 0.35);
+      }
+      footer {
+        margin-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+        font-size: 14px;
+        color: var(--muted);
+      }
+      @media (max-width: 480px) {
+        main { padding-top: 28px; }
+        section { padding: 18px 16px 16px; }
+        .toc ul { columns: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="brand" href="./support.html">Minesweeper Challenge</a>
+        <h1>Privacy Policy</h1>
+        <p class="lede">
+          This policy explains what information Minesweeper Challenge stores, what other
+          players can see, and how to delete it. The app is made by the Minesweeper
+          Challenge developer.
+        </p>
+        <p class="meta">Effective date: September 27, 2026</p>
+      </header>
+
+      <section>
+        <h2>The short version</h2>
+        <ul>
+          <li>You never give us an email, password, phone number, or real name.</li>
+          <li>No ads, no tracking, no third-party analytics, and we never sell your data.</li>
+          <li>Your display name, avatar, country, and game results are shown to other players on leaderboards and player cards.</li>
+          <li>You can permanently delete your online account at any time in Settings.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Your account</h2>
+        <p>
+          Online features (ranked games, the Daily puzzle leaderboard, and player profiles)
+          run on Supabase, a hosted Postgres database service. When you use the app, you are
+          given an anonymous account automatically. We never ask for an email address,
+          password, phone number, or real name.
+        </p>
+        <p>
+          A random account ID and a session token are stored on your device so the app can
+          keep you signed in to that anonymous account.
+        </p>
+      </section>
+
+      <section>
+        <h2>Information stored on our server</h2>
+        <ul>
+          <li><strong>Display name.</strong> Chosen by you and unique across all players. Names are filtered for offensive words. A starter name (for example, "Sergeant48213") is assigned by default.</li>
+          <li><strong>Avatar.</strong> The avatar style and color you pick.</li>
+          <li><strong>Country (optional).</strong> Only if you choose one. If you don't, your profile shows Earth.</li>
+          <li><strong>Ranked games.</strong> Mode, track, win or loss, time, rating change, and rating.</li>
+          <li><strong>Daily puzzle results.</strong> Date, whether you won, and your time.</li>
+          <li><strong>Infinite mode total.</strong> The total number of mines you have swept.</li>
+          <li><strong>Medals and badges.</strong> Medals you have unlocked, up to 3 pinned medals, and daily leaderboard badges.</li>
+          <li><strong>Name reports.</strong> If you report a name, or someone reports yours, we store which account made the report, which name was reported, and when.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What other players can see</h2>
+        <p>
+          Your display name, avatar, country, rating and division, ranks, stats, medals, and
+          the month you joined appear on global leaderboards and on your player card, which
+          other players can open.
+        </p>
+      </section>
+
+      <section>
+        <h2>Information stored only on your device</h2>
+        <p>
+          Your gameplay settings, board themes, local stats and history, and your Infinite
+          world are kept on your phone and are not sent to our server.
+        </p>
+      </section>
+
+      <section>
+        <h2>What we don't do</h2>
+        <ul>
+          <li>No ads and no advertising identifiers.</li>
+          <li>No tracking and no third-party analytics.</li>
+          <li>We do not sell your data or share it for marketing.</li>
+          <li>The app does not access your location, contacts, photos, microphone, or camera.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Name moderation</h2>
+        <p>
+          Any player can report a display name from a player card. The developer may reset a
+          reported name, and a name that receives 3 reports is reset automatically.
+        </p>
+      </section>
+
+      <section>
+        <h2>Deleting your data</h2>
+        <p>
+          In the app, go to <strong>Settings &gt; Delete my online account</strong>. This
+          permanently deletes your online account and everything linked to it on our server:
+          your profile, results, badges, medals, and reports.
+        </p>
+        <p>
+          Data stored on your phone stays there until you delete the app. You can also email
+          us at <a href="mailto:minesweeperchallenge0@gmail.com">minesweeperchallenge0@gmail.com</a> to ask us to delete
+          your account.
+        </p>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>Minesweeper Challenge is not directed at children under 13.</p>
+      </section>
+
+      <section>
+        <h2>Changes to this policy</h2>
+        <p>
+          If this policy changes, we will update this page and the effective date at the top.
+        </p>
+      </section>
+
+      <section class="contact">
+        <h2>Contact</h2>
+        <p>
+          Questions about privacy? Email
+          <a href="mailto:minesweeperchallenge0@gmail.com">minesweeperchallenge0@gmail.com</a>.
+        </p>
+      </section>
+
+      <footer>
+        <a href="./support.html">Support</a>
+        <span>&copy; 2026 Minesweeper Challenge</span>
+      </footer>
+    </main>
+  </body>
+</html>
